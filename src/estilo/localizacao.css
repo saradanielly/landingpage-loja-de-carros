@@ -1,0 +1,14 @@
+#localizacao {
+    background-color: var(--cor01);
+    text-align: center;
+}
+
+iframe {
+    margin: 30px;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 300px;
+    }
+}

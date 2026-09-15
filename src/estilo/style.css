@@ -1,0 +1,67 @@
+@import url(inicio.css);
+@import url(sobre.css);
+@import url(destaques.css);
+@import url(localizacao.css);
+@import url(contato.css);
+
+:root {
+    --cor01: #1d1d1d;
+    --cor02: #fff;
+    --cor03: #031657;
+    --cor04: #9f9fb6;
+    --cor05: #d4af37;
+    --cor06: #020641;
+    --cor07: #000225;
+    
+}
+
+body {
+    background-color: var(--cor03);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--cor05);
+    margin: auto 55px;
+}
+
+header {
+    background-color: var(--cor03);
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 8%;
+}
+
+nav, ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--cor05);
+    font-size: 20px;
+}
+
+#menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--cor04);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+

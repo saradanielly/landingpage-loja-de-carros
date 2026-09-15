@@ -1,0 +1,59 @@
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.descricao {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.descricao h1 {
+    color: var(--cor04);
+    font-size: 70px;
+}
+
+strong {
+    color: var(--cor05);
+}
+
+.descricao p {
+    font-size: 30px;
+    color: var(--cor04);
+}
+
+.imagem-loja {
+    width: 35%;
+    border-radius: 50px 0px 40px 40px;
+    margin: auto;
+}
+
+.botao_btn a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--cor05);
+}
+
+.botao_btn {
+    text-align: center;
+    border: 1px solid var(--cor04);
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    height: 35px;
+    margin: auto 15px;
+}
+
+.botao_btn:hover {
+    background-color: var(--cor06);
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .imagem-loja {
+        display: none;
+    }
+
+}
