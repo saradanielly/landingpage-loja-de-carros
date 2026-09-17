@@ -43,7 +43,7 @@ nav {
     padding: 20px 8%;
 }
 
-nav, ul {
+nav > ul {
     display: flex;
     list-style: none;
     gap: 48px;
@@ -55,7 +55,7 @@ nav, ul {
     font-size: 20px;
 }
 
-#menu-mobile {
+#mobile_btn {
     display: none;
     background: none;
     border: none;
@@ -64,4 +64,51 @@ nav, ul {
     cursor: pointer;
 }
 
+#mobile_menu {
+    display: none;
+}
 
+#mobile_menu.active {
+    display: block;
+}
+
+#mobile_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+
+    background-color: var(--cor07);
+}
+
+#mobile_menu a {
+    text-decoration: none;
+    color: var(--cor05);
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    nav > ul {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+    }
+
+    #mobile_menu.active {
+        display: block;
+    }
+
+    #mobile_menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+}
