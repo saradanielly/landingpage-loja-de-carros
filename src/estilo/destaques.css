@@ -2,12 +2,6 @@
     background-color: var(--cor07);
 }
 
-#destaques h1 {
-    color: var(--cor04);
-    text-align: center;
-    margin-top: 100px;
-}
-
 .carrossel {
     display: flex;
     align-items: center;
@@ -20,7 +14,6 @@
 
 #carros_destaques {
     display: flex;
-    gap: 20px;
     overflow-x: hidden;
     width: 100%;
     max-width: 1450px;
@@ -37,15 +30,23 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: center;
     align-items: center;
-
+    gap: 15px;
+    padding-top: 10px;
     transition: 0.3s ease;
 }
 
 .carros:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px var(--cor05);
+}
+
+.nome_carro {
+    margin: 15px;
+    color: var(--cor04);
+    font-size: 30px;
 }
 
 .imagem_carro {
