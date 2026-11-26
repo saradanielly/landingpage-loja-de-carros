@@ -1,5 +1,6 @@
 #destaques {
-    background-color: var(--cor07);
+    background-color: var(--cor06);
+    padding-bottom: 50px;
 }
 
 .carrossel {
@@ -64,8 +65,7 @@
     }
 
     .carros {
-        width: 100%;
-        flex: none;
+        max-width: 300px;
     }
 
     .direita,
