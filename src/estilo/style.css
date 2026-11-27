@@ -1,6 +1,7 @@
 @import url(inicio.css);
 @import url(sobre.css);
 @import url(diferenciais.css);
+@import url(depoimentos.css);
 @import url(destaques.css);
 @import url(localizacao.css);
 @import url(contato.css);
@@ -64,8 +65,8 @@ nav > ul {
 
 .botao_btn a {
     font-size: 25px;
-    text-decoration: none;
     color: var(--cor05);
+    text-decoration: none;
     text-align: center;
 }
 
@@ -78,11 +79,14 @@ nav > ul {
     width: 200px;
     height: 45px;
     margin: auto 15px;
+
+    transition: 0.3s;
 }
 
 .botao_btn:hover {
-    background-color: var(--cor06);
-    transition: 0.5s;
+    transform: translateY(-4px);
+    background-color: var(--cor05);
+    color: var(--cor06);
 }
 
 #mobile_btn {
